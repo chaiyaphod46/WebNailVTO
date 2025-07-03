@@ -1,0 +1,71 @@
+/* Popup.css */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background-color: white;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 900px; /* ปรับขนาดให้ใหญ่ขึ้น */
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .popup-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .popup-footer {
+    padding: 15px 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
+  }
+  
+  .popup-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .confirm-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .confirm-button:hover {
+    background-color: #45a049;
+  }

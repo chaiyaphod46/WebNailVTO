@@ -1,9 +1,12 @@
 .App {
   text-align: center;
+  width: 100%; /* ใช้ 100% ของความกว้างหน้าจอ */
+  max-width: 1080px; /* จำกัดความกว้างสูงสุดที่ 1080px */
+  margin: 0 auto; /* กึ่งกลางบนหน้าจอ */
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 40vmin; /* หน่วย vmin เทียบจากขนาดหน้าจอ */
   pointer-events: none;
 }
 
@@ -14,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffc0cb; /* สีชมพูอ่อน */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +25,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 1rem; /* เพิ่ม padding รอบ ๆ เนื้อหา */
+  box-sizing: border-box; /* รวม padding และ border ในความกว้างและความสูงขององค์ประกอบ */
 }
 
 .App-link {
@@ -35,4 +40,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (max-width: 1080px) {
+  .App {
+    width: 100%; /* ครอบคลุมความกว้างทั้งหมดสำหรับหน้าจอที่เล็กกว่า 1080px */
+  }
+}
+
+
+.btn-outline-primary {
+  border-radius: 25px; /* Make button edges rounder */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.button-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Make images circular */
+}
+
+.btn-outline-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Boost the shadow effect */
+}
+
+.ml-2 {
+  margin-left: 8px; /* Add some spacing between image and text */
 }
